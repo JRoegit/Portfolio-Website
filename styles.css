@@ -1,0 +1,424 @@
+:root {
+    --terminal-text-green: #16c60c;
+    --terminal-text-grey: #cccccc;
+    --terminal-text-blue: #1d58ff;
+    --terminal-bg-grey: #0c0c0c;
+    --section-bg-bgb: linear-gradient(90deg,black,var(--terminal-bg-grey) 1%,var(--terminal-bg-grey) 99%,black);
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Mono", monospace;
+    background: var(--section-bg-bgb);
+    color: var(--terminal-text-grey);
+}
+
+.navbar {
+    background-color: black;
+    color: var(--terminal-text-grey);
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+}
+
+.navbar-item {
+    padding: 30px;
+}
+
+.navbar-item:first-child {
+    margin-right: auto;
+}
+
+.navbar-item:not(:first-child):hover{
+    background-color: #1a1a1a; 
+    cursor: pointer;
+}
+
+.hero {
+
+    color: var(--terminal-text-grey);
+    height: calc(100vh - 75px);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.grey {
+    color: var(--terminal-text-grey);
+}
+
+.green {
+    color: var(--terminal-text-green);
+}
+
+.blue {
+    color: var(--terminal-text-blue);
+}
+
+.name {
+    white-space: pre-wrap;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7a;
+}
+
+::-webkit-scrollbar-button:single-button{
+    background: #171717 ;
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement{
+    background-position: center;
+    width: 10px;
+    height: 16px;
+    background-image: url("./Assets/Icons/up-arrow-svgrepo-com.svg");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover{
+    background-color: #373737;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active{
+    background-color: #a6a6a6;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment{
+    background-position: center ;
+    width: 10px;
+    height: 16px;
+    background-image: url("./Assets/Icons/down-arrow-svgrepo-com.svg");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover{
+    background-color: #373737;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active{
+    background-color: #a6a6a6;
+}
+
+.maximize-icon {
+    border:1px solid white;
+    width: 12px;
+    height: 12px;
+    margin: auto;
+}
+
+.minimize-icon {
+    border:1px solid white;
+    width: 12px;
+    height: 1px;
+    margin: auto;
+}
+
+.terminal-navbar{
+    background-color: black;
+    color: var(--terminal-text-grey);
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.terminal-navbar-item {
+    padding: 5px 15px;
+    display: flex;
+}
+
+.terminal-navbar-item:first-child {
+    margin-right: auto;
+    padding-top: 7px;
+    padding-left: 10px;
+    text-wrap: nowrap;
+    cursor: default;
+}
+
+.terminal-navbar-item:not(:first-child):hover {
+    background-color: #1a1a1a;
+}
+
+.terminal-navbar-item:last-child{
+    padding: 8px 15px;
+}
+
+.terminal-navbar-item:last-child:hover {
+    background-color: #e81123;
+}
+
+.terminal-container{ /*remove margin*/
+   margin: 25px auto; 
+   border: 1px solid #181818;
+   overflow: hidden;
+   background-color:var(--terminal-bg-grey);
+   box-shadow: 0px 0px 23px 12px rgba(0,0,0,0.75);
+}
+
+.terminal-content {
+    margin: 10px;
+    
+}
+
+.project-path{
+    text-wrap: nowrap;
+}
+
+.text-container {
+    margin: 25px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.man-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.man-section {
+    margin: 0 0 1rem 4rem;
+}
+
+.desc {
+    margin: 0 0 1rem 0;
+}
+
+.man-footer {
+    color: black;
+    background-color: var(--terminal-text-grey);
+    height: 1.2rem;
+    padding: 0 5px;
+    margin: auto 0 0 0;
+}
+
+#imgHolder {
+    width: 678px;
+    height: 678px;
+    display: block;
+    position: relative;
+    margin: 8px 0;
+}
+
+/*Initial image*/
+ #imgHolder::before {
+    content:"";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-image:url(./Assets/jerma\ nightmare.png);
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    z-index:10;
+}
+
+#imgHolder:hover::before {
+    opacity:0;
+}
+
+#imgHolder::after {
+    content:"";
+    background-image: url(./Assets/jerma\ normal.png);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  .blink {
+    animation: blink 1.1s step-start 0s infinite;
+  }
+  
+.projects {
+    padding: 100px 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container {
+    display: grid;
+    margin: 0 25px 25px 25px;
+    grid-template-columns: 50% 50% ;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-block {
+    margin: 5px 0 0 0 ;
+    display: grid;
+    grid-template-columns: 66% 34%;
+}
+
+.project-img {
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border:2px solid;
+}
+
+.section-header{
+    margin: 0 auto 80px auto;
+    font-weight: 700;
+    font-size:xx-large;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.project-description h1{
+   margin: 0;
+}
+
+.project-description p{
+    margin: 5px 0 0 0;
+}
+
+.project-terminal-container{
+    width: 80%;
+    margin: 25px auto; 
+    border: 1px solid #181818;
+    overflow: hidden;
+    background-color:var(--terminal-bg-grey);
+    
+}
+
+.technologies {
+    margin:auto 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.technologies-item{
+    margin-right: 10px;
+    box-shadow: 0 6px 4px -4px rgba(0,0,0,0.75);
+}
+
+.technologies-item:last-child {
+    margin-left: auto;
+}
+
+a {
+    color: var(--terminal-text-grey);
+    text-decoration: none;
+}
+
+.hiden {
+    display: none;
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(4);
+    }
+    75% {
+        transform: scale(4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.tech-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.skills {
+    padding: 100px 0;
+    background: var(--section-bg-bgb);
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-section-container {
+    width:60%;
+    margin: auto;
+}
+
+.skills-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-row {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-icon {
+    margin: 25px;
+    max-width: 60px;
+    max-height: 60px;
+    width:auto;
+    height: auto;
+    box-shadow: 0 6px 30px -4px rgba(0,0,0,0.75);
+}
+
+.wider {
+    width: 80%;
+}

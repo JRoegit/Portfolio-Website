@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8b19514a01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-item">JacobRoe@linux: ~</div>
+        <div class="navbar-item" id="projects">PROJECTS</div>
+        <div class="navbar-item" id="skills">SKILLS</div>
+        <div class="navbar-item" id="contact">CONTACT</div>
+        <div class="navbar-item" id="about">ABOUT</div>
+    </div>
+    <div class="hero">
+        <div class="text-container">
+            <div>
+                <span class="green">guest@linux</span>:<span class="blue">~</span>$ toilet Jacob Roe
+            </div>
+            <p class="name" id="ascii-name">    
+    mmmmm                                mm                  mmmmmm
+    """##                                ##                  ##""""##
+       ##   m#####m   m#####m   m####m   ##m###m             ##    ##   m####m    m####m
+       ##   " mmm##  ##"    "  ##"  "##  ##"  "##            #######   ##"  "##  ##mmmm##
+       ##  m##"""##  ##        ##    ##  ##    ##            ##  "##m  ##    ##  ##""""""
+ #mmmmm##  ##mmm###  "##mmmm#  "##mm##"  ###mm##"            ##    ##  "##mm##"  "##mmmm#
+  """""     """" ""    """""     """"    "" """              ""    """   """"      """""
+            </p>
+            <div>
+                <span class="green">guest@linux</span>:<span class="blue">~</span>$ <span id="underscore">man jacob</span>
+            </div>
+            <div class="man-banner">
+                <div>JACOB(1)</div>
+                <div>User Commands</div>
+                <div>JACOB(1)</div>
+            </div>
+            <div>NAME</div>
+            <div class="man-section">
+                jacob - A web/software developer
+            </div>        
+            <div>SYNOPSIS</div>
+            <div class="man-section">
+                jacob [OPTION]... [FILE]...
+            </div>
+            <div>DESCRIPTION</div>
+            <div class="man-section">
+                <div class="desc">
+                    THIS IS A DESCRIPTION
+                </div>
+                -p, --projects
+                <div class="man-section">
+                    displays all projects worked on by Jacob
+                </div>
+                -c, --contact  
+                <div class="man-section">
+                    displays Jacob's contact information
+                </div>
+                -s, --skills
+                <div class="man-section">
+                    displays Jacob's skills
+                </div>
+                -a, --about
+                <div class="man-section">
+                    displays information about Jacob
+                </div>
+                
+            </div>                                                    
+            <div class="man-footer">
+                Manual page jacob(1) line 1 (press h for help or q to quit)
+            </div>
+        </div>
+        <div class="terminal-container">
+            <div class="terminal"> 
+                <div class="terminal-navbar">
+                    <div class="terminal-navbar-item">guest@linux: ~/user/jacob/images</div>
+                    <div class="terminal-navbar-item">
+                        <div class="minimize-icon"></div>
+                    </div>
+                    <div class="terminal-navbar-item">
+                        <div class="maximize-icon"></div>
+                    </div>
+                    <div class="terminal-navbar-item">
+                        <div><i class="fa-solid fa-x" style="color: #cccccc;"></i></div>
+                    </div>
+                </div>
+                <div class="terminal-content">
+                    <div>
+                        <span class="green">guest@linux</span>:<span class="blue">/user/jacob/images</span>$ ascii-image-converter -C jacob.jpg
+                    </div>
+                    <div id="imgHolder"></div>
+                    <div>
+                        <span class="green">guest@linux</span>:<span class="blue">/user/jacob/images</span>$ <span class="blink">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="projects-section"> <!--JUST DO ONE BIG FUCKIN TERMINAL WITH ALL GRIDDED INSIDE???-->
+        <div class="section-header">PROJECTS</div>
+        <div class="projects-container">
+            <div class="project-section">
+                <div class="project-terminal-container">
+                    <div class="terminal"> 
+                        <div class="terminal-navbar">
+                            <div class="terminal-navbar-item">guest@linux: ~/user/jacob/projects</div>
+                            <div class="terminal-navbar-item">
+                                <div class="minimize-icon"></div>
+                            </div>
+                            <div class="terminal-navbar-item">
+                                <div class="maximize-icon"></div>
+                            </div>
+                            <div class="terminal-navbar-item">
+                                <div><i class="fa-solid fa-x" style="color: #cccccc;"></i></div>
+                            </div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="project-path">
+                                <span class="green">guest@linux</span>:<span class="blue">/user/jacob/projects</span>$ ./LMS
+                            </div>
+                            <hr>
+                            <div class="project-block">
+                                <div class="project-description">
+                                    <h1>
+                                        Library Management System
+                                    </h1>
+                                    <p>
+                                        A basic library management system that allows the user to add, change and search for books within a database. 
+                                        Built with C# using the .NET framework.
+                                    </p>
+                                    <div class="technologies">
+                                        <img src="./Assets/Icons/Microsoft_.NET_logo.svg" class="tech-icon technologies-item">
+                                        <img src="./Assets/Icons/xamlLogo.png" class="tech-icon technologies-item" style="width: 35px;">
+                                        <img src="./Assets/Icons/c--4.svg" class="tech-icon technologies-item">
+                                        <img src="./Assets/Icons/mysql-icon.svg" class="tech-icon technologies-item">
+                                        <a href="https://github.com/JRoegit/LMS" target="_blank" class="technologies-item">
+                                            <i class="fa-brands fa-github" style="font-size: xx-large;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./Assets/lmsCollage.png" class="project-img">
+                                </div>   
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="project-terminal-container">
+                    <div class="terminal"> 
+                        <div class="terminal-navbar">
+                            <div class="terminal-navbar-item">guest@linux: ~/user/jacob/projects</div>
+                            <div class="terminal-navbar-item">
+                                <div class="minimize-icon"></div>
+                            </div>
+                            <div class="terminal-navbar-item">
+                                <div class="maximize-icon"></div>
+                            </div>
+                            <div class="terminal-navbar-item">
+                                <div><i class="fa-solid fa-x" style="color: #cccccc;"></i></div>
+                            </div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="project-path">
+                                <span class="green">guest@linux</span>:<span class="blue">/user/jacob/projects</span>$ ./PROJECT NAME
+                            </div>
+                            <hr>
+                            <div class="project-block">
+                                <div class="project-description">
+                                    <h1>
+                                        PROJECT TITLE 2
+                                    </h1>
+                                    <p>
+                                        DESCRIPTION
+                                    </p>
+                                    <div class="technologies">
+                                        <i class="fa-brands fa-js technologies-item" style="font-size: xx-large;"></i>
+                                        <i class="fa-brands fa-html5 technologies-item" style="font-size: xx-large;"></i>
+                                        <i class="fa-brands fa-css3-alt technologies-item" style="font-size: xx-large;"></i>
+                                        <a href="https://github.com/JRoegit" target="_blank" class="technologies-item">
+                                            <i class="fa-brands fa-github" style="font-size: xx-large;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./Assets/jerma normal.png" class="project-img">
+                                </div>   
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="section-header">SKILLS</div>
+        <div class="skills-section-container">
+            <div class="terminal-container">
+                <div class="terminal"> 
+                    <div class="terminal-navbar">
+                        <div class="terminal-navbar-item">guest@linux: ~/user/jacob</div>
+                        <div class="terminal-navbar-item">
+                            <div class="minimize-icon"></div>
+                        </div>
+                        <div class="terminal-navbar-item">
+                            <div class="maximize-icon"></div>
+                        </div>
+                        <div class="terminal-navbar-item">
+                            <div><i class="fa-solid fa-x" style="color: #cccccc;"></i></div>
+                        </div>
+                    </div>
+                    <div class="terminal-content">
+                        <div>
+                            <span class="green">guest@linux</span>:<span class="blue">/user/jacob</span>$ ./skills jacob
+                        </div>
+                        <div class="skills-container">
+                            
+                            <div class="skill-row">
+                                <div>
+                                    <img src="/Assets/Icons/JavaScript-logo.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets//Icons/CSS3_logo.svg.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/html-1.svg" class="skill-icon">
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div>
+                                    <img src="/Assets/Icons/Bash_Logo_Colored.svg.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/ubuntu-plain-icon-256x256-we4d4gd0.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/Git_icon.svg.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/ISO_C++_Logo.svg.png" class="skill-icon">
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div>
+                                    <img src="/Assets/Icons/Python-logo-notext.svg.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/java-icon-756x1024-si1cd6qx.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/C_Logo.png" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/c--4.svg" class="skill-icon">
+                                </div>
+                                
+                            </div>
+                            <div class="skill-row">
+                                <div>
+                                    <img src="/Assets/Icons/mysql-icon.svg" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/Microsoft_.NET_logo.svg" class="skill-icon">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/xamlLogo.png" class="skill-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
