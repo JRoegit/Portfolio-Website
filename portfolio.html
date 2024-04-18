@@ -16,7 +16,6 @@
         <div class="navbar-item" id="projects">PROJECTS</div>
         <div class="navbar-item" id="skills">SKILLS</div>
         <div class="navbar-item" id="contact">CONTACT</div>
-        <div class="navbar-item" id="about">ABOUT</div>
     </div>
     <div class="hero">
         <div class="text-container">
@@ -121,7 +120,7 @@
                         </div>
                         <div class="terminal-content">
                             <div class="project-path">
-                                <span class="green">guest@linux</span>:<span class="blue">/user/jacob/projects</span>$ ./LMS
+                                <span class="green">guest@linux</span>:<span class="blue">/user/jacob/projects</span>$ jacob -p LMS
                             </div>
                             <hr>
                             <div class="project-block">
@@ -169,7 +168,7 @@
                         </div>
                         <div class="terminal-content">
                             <div class="project-path">
-                                <span class="green">guest@linux</span>:<span class="blue">/user/jacob/projects</span>$ ./PROJECT NAME
+                                <span class="green">guest@linux</span>:<span class="blue">/user/jacob/projects</span>$ jacob -p PROJECT NAME
                             </div>
                             <hr>
                             <div class="project-block">
@@ -200,7 +199,7 @@
             </div>
         </div>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills-section">
         <div class="section-header">SKILLS</div>
         <div class="skills-section-container">
             <div class="terminal-container">
@@ -219,59 +218,59 @@
                     </div>
                     <div class="terminal-content">
                         <div>
-                            <span class="green">guest@linux</span>:<span class="blue">/user/jacob</span>$ ./skills jacob
+                            <span class="green">guest@linux</span>:<span class="blue">/user/jacob</span>$ jacob --skills
                         </div>
                         <div class="skills-container">
                             
                             <div class="skill-row">
                                 <div>
-                                    <img src="/Assets/Icons/JavaScript-logo.png" class="skill-icon">
+                                    <img src="/Assets/Icons/JavaScript-logo.png" class="skill-icon bot-shadow">
                                 </div>
                                 <div>
-                                    <img src="/Assets//Icons/CSS3_logo.svg.png" class="skill-icon">
+                                    <img src="/Assets//Icons/CSS3_logo.svg.png" class="skill-icon bot-shadow">
                                 </div>
                                 <div>
-                                    <img src="/Assets/Icons/html-1.svg" class="skill-icon">
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <div>
-                                    <img src="/Assets/Icons/Bash_Logo_Colored.svg.png" class="skill-icon">
-                                </div>
-                                <div>
-                                    <img src="/Assets/Icons/ubuntu-plain-icon-256x256-we4d4gd0.png" class="skill-icon">
-                                </div>
-                                <div>
-                                    <img src="/Assets/Icons/Git_icon.svg.png" class="skill-icon">
-                                </div>
-                                <div>
-                                    <img src="/Assets/Icons/ISO_C++_Logo.svg.png" class="skill-icon">
+                                    <img src="/Assets/Icons/html-1.svg" class="skill-icon bot-shadow">
                                 </div>
                             </div>
                             <div class="skill-row">
                                 <div>
-                                    <img src="/Assets/Icons/Python-logo-notext.svg.png" class="skill-icon">
+                                    <img src="/Assets/Icons/Bash_Logo_Colored.svg.png" class="skill-icon bot-shadow">
                                 </div>
                                 <div>
-                                    <img src="/Assets/Icons/java-icon-756x1024-si1cd6qx.png" class="skill-icon">
+                                    <img src="/Assets/Icons/ubuntu-plain-icon-256x256-we4d4gd0.png" class="skill-icon bot-shadow">
                                 </div>
                                 <div>
-                                    <img src="/Assets/Icons/C_Logo.png" class="skill-icon">
+                                    <img src="/Assets/Icons/Git_icon.svg.png" class="skill-icon bot-shadow">
                                 </div>
                                 <div>
-                                    <img src="/Assets/Icons/c--4.svg" class="skill-icon">
+                                    <img src="/Assets/Icons/ISO_C++_Logo.svg.png" class="skill-icon bot-shadow">
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div>
+                                    <img src="/Assets/Icons/Python-logo-notext.svg.png" class="skill-icon bot-shadow">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/java-icon-756x1024-si1cd6qx.png" class="skill-icon bot-shadow">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/C_Logo.png" class="skill-icon bot-shadow">
+                                </div>
+                                <div>
+                                    <img src="/Assets/Icons/c--4.svg" class="skill-icon bot-shadow">
                                 </div>
                                 
                             </div>
                             <div class="skill-row">
                                 <div>
-                                    <img src="/Assets/Icons/mysql-icon.svg" class="skill-icon">
+                                    <img src="/Assets/Icons/mysql-icon.svg" class="skill-icon bot-shadow">
                                 </div>
                                 <div>
-                                    <img src="/Assets/Icons/Microsoft_.NET_logo.svg" class="skill-icon">
+                                    <img src="/Assets/Icons/Microsoft_.NET_logo.svg" class="skill-icon bot-shadow">
                                 </div>
                                 <div>
-                                    <img src="/Assets/Icons/xamlLogo.png" class="skill-icon">
+                                    <img src="/Assets/Icons/xamlLogo.png" class="skill-icon bot-shadow">
                                 </div>
                             </div>
                         </div>
@@ -279,6 +278,50 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="contact-container" id="contact-section">
+        <div class="contact">
+            <div class="section-header">CONTACT</div>
+            <div class="contact-section">
+                <div class="terminal-container">
+                    <div class="terminal"> 
+                        <div class="terminal-navbar">
+                            <div class="terminal-navbar-item">guest@linux: ~/user/jacob</div>
+                            <div class="terminal-navbar-item">
+                                <div class="minimize-icon"></div>
+                            </div>
+                            <div class="terminal-navbar-item">
+                                <div class="maximize-icon"></div>
+                            </div>
+                            <div class="terminal-navbar-item">
+                                <div><i class="fa-solid fa-x" style="color: #cccccc;"></i></div>
+                            </div>
+                        </div>
+                        <div class="terminal-content">
+                            <div>
+                                <span class="green">guest@linux</span>:<span class="blue">/user/jacob</span>$ jacob --contact
+                            </div>
+                            <div class="skills-container">
+                                <div class="skill-row ">
+                                    <a>
+                                        <img src="/Assets/Icons/112-gmail_email_mail-512.webp" class="skill-icon">
+                                    </a>    
+                                    <a>
+                                        <img src="/Assets/Icons/25231.png" class="skill-icon">
+                                    </a>
+                                    <a>
+                                        <img src="/Assets/Icons/LinkedIn_icon.svg.webp" class="skill-icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
     </div>
     <script src="./scripts.js"></script>
 </body>

@@ -1,9 +1,21 @@
 const asciiName = document.getElementById('ascii-name');
-const projectsNavBtn = document.getElementById('project');
+const projectsNavBtn = document.getElementById('projects');
 const skillsNavBtn = document.getElementById('skills');
 const contactNavBtn = document.getElementById('contact');
-const aboutNavBtn = document.getElementById('about');
 const projectWindows = document.querySelectorAll('.project-section');
+
+projectsNavBtn.addEventListener('click', ()=> {
+    document.getElementById("projects-section").scrollIntoView();
+});
+
+skillsNavBtn.addEventListener('click', ()=> {
+    document.getElementById("skills-section").scrollIntoView();
+});
+
+contactNavBtn.addEventListener('click', ()=> {
+    document.getElementById("contact-section").scrollIntoView();
+});
+
 
 for(let window of projectWindows){
     window.childNodes[1].childNodes[1].childNodes[1].childNodes[3].addEventListener('click', ()=>{ // min
